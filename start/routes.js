@@ -19,3 +19,8 @@ const Route = use('Route')
 Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
+
+Route.group(() =>{
+  Route.get('homeworks/list/:id', 'StudentController.list')
+  Route.put('homeworks/:id/:studentId','StudentController.update')
+}).prefix('api/v1/student')
