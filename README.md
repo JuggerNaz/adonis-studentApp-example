@@ -36,6 +36,14 @@ Run the following command to seed database.
 adonis seed
 ```
 
+### Start
+
+Run the following command to start the app.
+
+```js
+adonis serve --dev
+```
+
 ### Postman collection
 
 [studentApp postman collection](https://www.getpostman.com/collections/b4b4b28167606f8cea2f)
