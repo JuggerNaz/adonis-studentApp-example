@@ -1,4 +1,4 @@
-# Adonis API application
+# Adonis StudentApp API application (example)
 
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
 
@@ -10,14 +10,15 @@ This is the boilerplate for creating an API server in AdonisJs, it comes pre-con
 
 ## Setup
 
-Use the adonis command to install the blueprint
+Install adonisjs cli
 
 ```bash
-adonis new yardstick --api-only
+npm i -g @adonisjs/cli
 ```
 
-or manually clone the repo and then run `npm install`.
+Clone this repo and then run `npm install`.
 
+Rename or move `.envbkp` to `.env`, it contain server config.
 
 ### Migrations
 
@@ -26,3 +27,19 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+
+### Seed
+
+Run the following command to seed database.
+
+```js
+adonis seed
+```
+
+### Postman collection
+
+[studentApp postman collection](https://www.getpostman.com/collections/b4b4b28167606f8cea2f)
+
+### API auth
+
+Before make a request that has been protected by auth, please provide `Authentication` header and put value as `Bearer [token]` where you can get jwt token via login API (just copy over from the token value in response)
